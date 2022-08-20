@@ -90,15 +90,15 @@ App.onSay.Add(function(player, text) {
 	else if (command[0] == "?attendance" && (player.tag.checked)) {
 		App.showCenterLabel("You have already submitted your attendance");
 	}
-	else if ( true){
+	else if (command[0] == "?stop" && (player.role > 0)){
+		let updated_storage = JSON.parse(App.storage);
 		for (let player of App.players) {
-			if ((timeFinish > 0.2) && (player.tag.checked == false)) {
+			if ((player.tag.checked == false)) {
 				let foo = parseInt(updated_storage[curr_player].absent);
 				updated_storage[curr_player].absent = foo + 1;
 			}	
 		}
-	}
-	else if (command[0] == 'abbas') {
-		App.showCenterLabel("Checking");
+		App.storage = JSON.stringify(updated_storage);
+		App.save();
 	}
 })
