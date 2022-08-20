@@ -78,11 +78,6 @@ App.onSay.Add(function(player, text) {
 			updated_storage[curr_player].absent = foo + 1;
 		}
 		
-		if ((timeDelta > 10) && (player.tag.checked == false)) {
-			let foo = parseInt(updated_storage[curr_player].absent);
-			updated_storage[curr_player].absent = foo + 1;
-		}
-		
 		App.storage = JSON.stringify(updated_storage);
 		App.save();
 
@@ -94,6 +89,14 @@ App.onSay.Add(function(player, text) {
 	}
 	else if (command[0] == "?attendance" && (player.tag.checked)) {
 		App.showCenterLabel("You have already submitted your attendance");
+	}
+	else if ( true){
+		for (let player of App.players) {
+			if ((timeFinish > 0.2) && (player.tag.checked == false)) {
+				let foo = parseInt(updated_storage[curr_player].absent);
+				updated_storage[curr_player].absent = foo + 1;
+			}	
+		}
 	}
 	else if (command[0] == 'abbas') {
 		App.showCenterLabel("Checking");
