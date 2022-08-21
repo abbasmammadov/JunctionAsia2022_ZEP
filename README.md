@@ -32,4 +32,6 @@ To enhance the real life university experience we have real-time office hours in
 
 Lobby:
 
+<img width="523" alt="Screen Shot 2022-08-21 at 11 15 23 AM" src="https://user-images.githubusercontent.com/101348852/185772424-a4690691-f2bf-4bb9-8a60-08ced51b1c87.png">
+
 As the name suggests this is the place where the students can come to interact and socialize with each other.
