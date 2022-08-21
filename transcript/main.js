@@ -11,7 +11,7 @@ let computerLocations ={
 	7 : [15, 11] 
 };
 
-App.onInit.Add(function () {
+App.onJoinPlayer.Add(function (player) {
 	for (let x=0;x<8;x++)
 	{
 		for (let i=0;i<3;i++)
