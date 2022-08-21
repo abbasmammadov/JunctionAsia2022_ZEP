@@ -14,6 +14,7 @@ SETUP
     - ?stop - finishin the attendance and setting the rest of the students as "absent" 
     - ?test - checking whether minigame is working properly 
 2.3. Terminate the minigame.
+You can also watch the demonstration --> https://youtu.be/7cLWABBuz-Y.
 
 3. Transcript is a Normal app which can be initialized via Map editor. 
     - Move the character to the in front of any computer in lecture room and click the button "Z" to see your grades :)
