@@ -11,6 +11,8 @@ let computerLocations ={
 	7 : [15, 11] 
 };
 
+let computerTotal = [];
+
 App.onJoinPlayer.Add(function (player) {
 	for (let x=0;x<8;x++)
 	{
@@ -18,6 +20,10 @@ App.onJoinPlayer.Add(function (player) {
 		{
 			for (let j=0;j<3;j++)
 			{
+				let temp = {};
+				temp.x = computerLocations[x][0]+i;
+				temp.y = computerLocations[x][1]+j;
+				computerTotal.push(temp);
 				Map.putObject(computerLocations[x][0]+i, computerLocations[x][1]+j, testObject, { overlap: true });
 			}
 		}
@@ -31,6 +37,13 @@ App.onJoinPlayer.Add(function (player) {
 });
 
 App.onObjectAttacked.Add(function (sender, x, y) {
+	/* App.sayToAll(String(computerTotal));
+	let temp = {};
+	temp.x = x;
+	temp.y = y;
+	if (!computerTotal.includes(temp)){
+		return;
+	} */
 	transcriptDB = {
 		'Empty': "https://i.imgur.com/mQUVYzL.png",
 		'Wasi': "https://i.imgur.com/FzppCNy.png",
@@ -43,9 +56,13 @@ App.onObjectAttacked.Add(function (sender, x, y) {
 	App.showCenterLabel(
 		`${sender.name} has opened a transcript window`
 		);
+	let xx = sender.name;
+	if (!transcriptDB.hasOwnProperty(xx)) {
+		xx = 'Empty';
+	}
 	sender.tag.widget = sender.showWidget("videos.html","top",600,600);
 	sender.tag.widget.sendMessage({
-		text: transcriptDB[sender.name]
+		text: transcriptDB[xx]
 	});
 
 	sender.tag.widget.onMessage.Add(function (sender, msg) {
