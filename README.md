@@ -4,19 +4,19 @@ SETUP
 
 1. Go to the link https://zep.us/play/8lPgbo. 
 
-2. In attendance, there is a mini-game to store the attendance status of students (stored in App.storage) \\
-2.1. Drop the minigame. \\
-2.2. Use one of the below-shown features by typing into the chat (?register and ?reset can only be done by privileged people):\\
-    ?reset - reseting the storage to the empty\\
-    ?register - can only be done by professor (one with privilege) to initialize the attendance status to zero\\
-    ?attendance - done by student in order to get attendance in first 5 minutes of the class (time starts when the mini game dropped), where within 5mins is "attended", within 10 mins is "late", and the rest is "absent" \\
-    ?show - visualizing the results  \\
-    ?stop - finishin the attendance and setting the rest of the students as "absent" \\
-    ?test - checking whether minigame is working properly \\
+2. In attendance, there is a mini-game to store the attendance status of students (stored in App.storage) 
+    - Drop the minigame. 
+    - Use one of the below-shown features by typing into the chat (?register and ?reset can only be done by privileged people):
+    - ?reset - reseting the storage to the empty
+    - ?register - can only be done by professor (one with privilege) to initialize the attendance status to zero
+    - ?attendance - done by student in order to get attendance in first 5 minutes of the class (time starts when the mini game   dropped), where within 5mins is "attended", within 10 mins is "late", and the rest is "absent" 
+    - ?show - visualizing the results  
+    - ?stop - finishin the attendance and setting the rest of the students as "absent" 
+    - ?test - checking whether minigame is working properly 
 2.3. Terminate the minigame.
 
-3. Transcript is a Normal app which can be initialized via Map editor. \\
-3.1. Move the character to the in front of any computer in lecture room and click the button "Z" to see your grades :)
+3. Transcript is a Normal app which can be initialized via Map editor. 
+    - Move the character to the in front of any computer in lecture room and click the button "Z" to see your grades :)
 
 4. In order to watch the lecture videos, go in front of computers 1, 3, 5, or 8 and press "F" to start your amazing Machine Learning Course from Stanford.
 
