@@ -1,5 +1,28 @@
 # JunctionAsia2022_ZEP
 
+SETUP
+
+1. Go to the link https://zep.us/play/8lPgbo. 
+
+2. In attendance, there is a mini-game to store the attendance status of students (stored in App.storage)
+2.1. Drop the minigame.
+2.2. Use one of the below-shown features by typing into the chat (?register and ?reset can only be done by privileged people):
+    ?reset - reseting the storage to the empty
+    ?register - can only be done by professor (one with privilege) to initialize the attendance status to zero
+    ?attendance - done by student in order to get attendance in first 5 minutes of the class (time starts when the mini game dropped), where within 5mins is "attended", within 10 mins is "late", and the rest is "absent"
+    ?show - visualizing the results 
+    ?stop - finishin the attendance and setting the rest of the students as "absent"
+    ?test - checking whether minigame is working properly
+2.3. Terminate the minigame.
+
+3. Transcript is a Normal app which can be initialized via Map editor.
+3.1. Move the character to the in front of any computer in lecture room and click the button "Z" to see your grades :)
+
+4. In order to watch the lecture videos, go in front of computers 1, 3, 5, or 8 and press "F" to start your amazing Machine Learning Course from Stanford.
+
+
+INTRODUCTION AND DETAILED DESCRIPTION OF THE ENVIRONMENT
+
 Due to COVID, the world saw the potential of online education. Since then the number of online universities degrees and educational platforms skyrocketed with a student body of 92 million as of 2021. COVID showed us the crisis and since there is no guarantee that a similar pandemic won’t take place in the future we must be prepared so that education never stops for anyone.
 
 Although online courses provide flexibility, it lacks the interaction of an offline class. Gradually, students lose motivation and their performance deteriorates. Our main goal is integrating an extremely interactive Metaverse like ZEP with online education services enabling students to utilize the existing flexibility, have separate group study sessions, socialize with classmates and solidify concepts utilizing the office hours with professors. This project is both scalable and has huge potential due to being a first mover in the blue ocean market, and due to the growing number of online education services striving to be more interactive. ZEPAdemics can provide  the required leverage and be the future of Online Education.
