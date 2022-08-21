@@ -37,13 +37,16 @@ App.onJoinPlayer.Add(function (player) {
 });
 
 App.onObjectAttacked.Add(function (sender, x, y) {
-	/* App.sayToAll(String(computerTotal));
-	let temp = {};
-	temp.x = x;
-	temp.y = y;
-	if (!computerTotal.includes(temp)){
+	//App.sayToAll(String(computerTotal));
+	let flag=false;
+	for(i=0;i<72;i++)
+	{
+		if(computerTotal[i].x==x && computerTotal[i].y==y) flag=true;
+		if(flag==true) break;
+	}
+	if (flag==false){
 		return;
-	} */
+	}
 	transcriptDB = {
 		'Empty': "https://i.imgur.com/mQUVYzL.png",
 		'Wasi': "https://i.imgur.com/FzppCNy.png",
