@@ -17,6 +17,7 @@ App.onSay.Add(function(player, text) {
 
 	if ((command[0] == "?register") && (player.role > 0)) {
 		player.title = "Professor";
+		player.sendUpdated();
 		let players_reg = App.players;
 		let check_reg = JSON.parse(App.storage);
 		let check_reg_str = App.storage;
@@ -160,7 +161,7 @@ App.onSay.Add(function(player, text) {
 	}
 
 	else if (command[0] == "?reset" && (player.role > 0)){
-		player.title = "Professor";
+		// player.title = "Professor";
 		App.storage = "{}";
 		App.save();
 	}
