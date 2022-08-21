@@ -31,11 +31,23 @@ App.onJoinPlayer.Add(function (player) {
 });
 
 App.onObjectAttacked.Add(function (sender, x, y) {
+	transcriptDB = {
+		'Empty': "https://i.imgur.com/mQUVYzL.png",
+		'Wasi': "https://i.imgur.com/FzppCNy.png",
+		'Daeen Kabir': "https://i.imgur.com/6nqKydW.png",
+		'sadatshams': "https://i.imgur.com/3ZLJDCE.png",
+		'H M QUAMRAN HASAN': "https://i.imgur.com/Skonb0u.png",
+		'Abbas Mammadov': "https://i.imgur.com/pJ97SsL.png"
+	}
 	//Map.putObject(x, y, null);	
 	App.showCenterLabel(
 		`${sender.name} has opened a transcript window`
 		);
-	sender.tag.widget = sender.showWidget("videos.html","top",1000,1000);
+	sender.tag.widget = sender.showWidget("videos.html","top",600,600);
+	sender.tag.widget.sendMessage({
+		text: transcriptDB[sender.name]
+	});
+
 	sender.tag.widget.onMessage.Add(function (sender, msg) {
 		// Closes the widget when the 'type: close' message is sent from the widget to the App
 		if (msg.type == "close") {
